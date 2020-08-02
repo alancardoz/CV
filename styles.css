@@ -1,0 +1,56 @@
+body {
+  background-color: #EEE8AA;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -5%;
+  }
+
+  to {
+    margin-right: -40%;
+  }
+}
+
+h1 {
+  animation: 3s linear 1s infinite alternate slidein;
+  color: #6f0000;
+  text-shadow: 2px 2px 5px #fc8210;
+
+  .blinking {
+    animation: blinking 1.2s infinite;
+  }
+
+  @keyframes blinkingText {
+    0% {
+      color: #000;
+    }
+
+    49% {
+      color: #000;
+    }
+
+    60% {
+      color: transparent;
+    }
+
+    99% {
+      color: transparent;
+    }
+
+    100% {
+      color: #000;
+    }
+  }
+
+  h3 {
+    color: #f17808
+  }
+
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+  }
