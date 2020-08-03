@@ -13,16 +13,31 @@ body {
 }
 
 h1 {
-  animation: 3s linear 1s infinite alternate slidein, blinking .2s infinite;
+  animation: 3s linear 1s infinite alternate slidein, blinking 2s infinite;
   color: #6f0000;
   text-shadow: 2px 2px 5px #fc8210;
 }
-@keyframes blinking{
-  0%{     color: #000;    }
-  49%{    color: #000; }
-  60%{    color: transparent; }
-  99%{    color:transparent;  }
-  100%{   color: #000;    }
+
+@keyframes blinking {
+  0% {
+    color: #000;
+  }
+
+  49% {
+    color: #000;
+  }
+
+  60% {
+    color: transparent;
+  }
+
+  99% {
+    color: transparent;
+  }
+
+  100% {
+    color: #000;
+  }
 }
 
 h3 {
