@@ -4,11 +4,11 @@ body {
 
 @keyframes slidein {
   from {
-    margin-left: -5%;
+    padding-left: 0;
   }
 
   to {
-    margin-right: -40%;
+    padding-left: 59%;
   }
 }
 
@@ -16,11 +16,17 @@ h1 {
   animation: 3s linear 1s infinite alternate slidein, blinking 2s infinite;
   color: #6f0000;
   text-shadow: 2px 2px 5px #fc8210;
+  font-size: 4em
 }
 
 @keyframes blinking {
   0% {
     color: #000;
+    -moz-transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
   }
 
   49% {
